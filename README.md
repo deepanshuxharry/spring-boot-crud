@@ -10,8 +10,6 @@ java -jar jenkins-cli.jar -s http://localhost:8080 \
 
 
 
-  curl -X POST http://product247.com/app/v1/addProduct \
-     -H "Content-Type: application/json" \
-     -d '{"id":1,"name":"Laptop","quantity":2,"price":80000}'
+  curl -X POST http://product247.com/app/v1/addProduct -H "Content-Type: application/json" -d '{"id":1,"name":"Laptop","quantity":2,"price":80000}'
 
 
