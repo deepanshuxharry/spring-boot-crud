@@ -4,7 +4,7 @@ metadata:
   name: springboot-crud-deployment-v1-1
   namespace: microservice-v1-1
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
       app: springboot-k8s-mysql-v1-1
@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: springboot-crud-k8s-v1-1
-          image: ${DOCKERHUB_USER}/${IMAGE_NAME}:${IMAGE_TAG} # e.g. sayantan2k21/spring-boot-crud-mysql-k8s-example-2:v1.1
+          image: ${DOCKERHUB_USER}/${IMAGE_NAME}:${IMAGE_TAG}
           ports:
             - containerPort: 9191
           env:
